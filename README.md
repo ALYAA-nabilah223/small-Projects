@@ -1,4 +1,4 @@
-# C++ Small Projects
+# C# Small Projects
 >
 
 ## Projects
