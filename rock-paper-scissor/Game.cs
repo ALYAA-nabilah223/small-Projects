@@ -129,7 +129,8 @@ class Game
         if (!int.TryParse( holder, out result))
         {
             Console.WriteLine("Invalid input. Please enter a number.");
-            result = 0; 
+            result = 0;  
+            
         }
     }
 
