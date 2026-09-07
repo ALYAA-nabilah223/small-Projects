@@ -31,20 +31,24 @@ class Game
     public void Start()
     {
         string holder;
+        int result;
         Console.WriteLine("Welcome to Rock-Paper-Scissors Game!");
         // Chosing Mode
         do
         {
-            Console.WriteLine("Please choose a mode: \n1. Player vs Computer\n2. Player vs Player\n>> ");
+            Console.Write("Please choose a mode: \n1. Player vs Computer\n2. Player vs Player\n>> ");
             holder = Console.ReadLine();
-            TryParseInput(holder, out Mode);
+            TryParseInput(holder, out result);
+            Mode = result;
+
         }while(Mode <= 0 || Mode > 2);
 
         do
         {
             Console.WriteLine("Please enter the number of rounds you want to play: ");
             holder = Console.ReadLine();
-            TryParseInput(holder, out Rounds);
+            TryParseInput(holder, out result);
+            Rounds = result;
         }while(Rounds <= 0);
        
 
@@ -55,7 +59,8 @@ class Game
             {
                 Console.WriteLine("1. Rock\n2. Paper\n3. Scissors\nEnter your choice (1-3): ");
                 holder = Console.ReadLine();
-                TryParseInput(holder, out player1.Choices);
+                TryParseInput(holder, out result);
+                player1.Choices = result;
             }while(player1.Choices <= 0 || player1.Choices > 3);
 
             if(Mode == 1)
@@ -73,7 +78,8 @@ class Game
                 {
                 Console.WriteLine("1. Rock\n2. Paper\n3. Scissors\nEnter your choice (1-3): ");
                 holder = Console.ReadLine();
-                TryParseInput(holder, out player2.Choices);
+                TryParseInput(holder, out result);
+                player2.Choices = result;
                 }while(player2.Choices <= 0 || player2.Choices > 3);
 
                 }
