@@ -5,6 +5,7 @@
 
 | No.| Project | Status | 
 | --- | --- | --- |
-| 1 | [Rock-Paper-Scissor](./rock-paper-scissor) | In progress |
+| 1 | [Rock-Paper-Scissor](./rock-paper-scissor) | Completed on 7/9/2026 |
+| 2 | data-structure-playground | In progress |
 
 
